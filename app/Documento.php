@@ -15,4 +15,6 @@ class Documento extends Model
 		return $this->hasMany('App\documento_proceso'); 
 	}
 
+	
+
 }

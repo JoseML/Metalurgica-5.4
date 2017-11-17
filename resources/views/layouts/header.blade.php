@@ -19,6 +19,7 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/pages/signin.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/pages/dashboard.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/pages/plans.css') }}" rel="stylesheet">
 
 </head>
 
@@ -100,7 +101,7 @@
     <script src="{{ asset('js/bootstrap.js') }}"></script>
     <script src="{{ asset('js/full-calendar/fullcalendar.min.js') }}"> language="javascript" type="text/javascript" </script>
     <script src="{{ asset('js/base.js') }}"></script> 
-    
+
     @yield('js')
 
 </body>

@@ -15,6 +15,15 @@ Route::get('/', function () {
     return view ('admins.admin');
 })->middleware('auth');
 
+
+Route::prefix('admin')->group(function () {
+  
+Route::get('/expedientes','ExpedientesController@gestionExpediente')->name('admin.expedientes')->middleware('auth');
+Route::get('/expedientes/create','ExpedientesController@create')->name('admin.expedientes.create')->middleware('auth');
+Route::post('/expedientes','ExpedientesController@store')->name('admin.expedientes.store')->middleware('auth');
+
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

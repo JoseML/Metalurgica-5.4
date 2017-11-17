@@ -181,6 +181,8 @@ return [
 
         //laravel debugbar
         Barryvdh\Debugbar\ServiceProvider::class,
+        //laravel collective html
+        Collective\Html\HtmlServiceProvider::class,
 
     ],
 
@@ -232,8 +234,10 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         // laravel debugbar
-
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        // Laravel collective htmtl
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 

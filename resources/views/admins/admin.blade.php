@@ -41,7 +41,7 @@
                     <a href="administracion.html" class="shortcut">
                       <i class="shortcut-icon icon-briefcase"></i><span class="shortcut-label">Administracion</span> 
                     </a>
-                    <a href="expedientes.html" class="shortcut">
+                    <a href="{{ route('admin.expedientes') }}" class="shortcut">
                       <i class="shortcut-icon icon-paste"></i><span class="shortcut-label">Gestionar Expedientes</span>
                     </a>
                     <a href="reportes.html" class="shortcut">
