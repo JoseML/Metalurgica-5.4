@@ -53,18 +53,17 @@
                             </div>
                         </div>
                         {{-- datos adicionales a copiar--}}
-
                             <label for="cedula" class="col-md-4 control-label">cedula</label>
                              <div class="col-md-6">
                                 <input id="cedula" type="text" class="form-control" name="cedula" value="{{ old('cedula') }}" required autofocus>
                             </div>
 
-
+                            <br><br>
                             <label for="rol" class="col-md-4 control-label">rol</label>
                              <div class="col-md-6">
                                 <input id="rol" type="text" class="form-control" name="rol" value="{{ old('rol') }}" required autofocus>
                             </div>
-                        
+                            <br>
                             <label for="nombre" class="col-md-4 control-label">nombre</label>
                              <div class="col-md-6">
                                 <input id="nombre" type="text" class="form-control" name="nombre" value="{{ old('nombre') }}" required autofocus>
