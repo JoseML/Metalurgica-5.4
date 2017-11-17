@@ -18,6 +18,8 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/pages/signin.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/pages/dashboard.css') }}" rel="stylesheet">
+
 </head>
 
 
@@ -79,7 +81,7 @@
 </div> <!-- /navbar -->
 
 <div id="app">
-    @yield('content')    
+@yield('content')    
 </div>
  
 
@@ -92,5 +94,14 @@
    
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/jquery-1.7.2.min.js') }}"></script> 
+    <script src=" {{ asset('js/excanvas.min.js') }}"></script> 
+    <script src="{{ asset('js/chart.min.js') }}" type="text/javascript"></script> 
+    <script src="{{ asset('js/bootstrap.js') }}"></script>
+    <script src="{{ asset('js/full-calendar/fullcalendar.min.js') }}"> language="javascript" type="text/javascript" </script>
+    <script src="{{ asset('js/base.js') }}"></script> 
+    
+    @yield('js')
+
 </body>
 </html>
