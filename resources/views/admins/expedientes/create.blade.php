@@ -27,12 +27,12 @@
                 <input type="text" class="span6" id="cod">
               </div> <!-- /controls -->       
             </div> <!-- /control-group -->		
-            
+
 
               <div class="control-group">                     
              {!! Form::label('descripcion','Descripcion') !!}
               <div class="controls">
-               {!! Form::text('Descripcion',null,['class'=>'form-control','placeholder'=>''])!!}
+               {!! Form::text('descripcion',null,['class'=>'form-control','placeholder'=>''])!!}
                </div> <!-- /controls -->       
             </div> <!-- /control-group -->    
              <div class="control-group">
@@ -78,7 +78,8 @@
                   </div>  <!-- /controls -->      
               </div> <!-- /control-group --> 
                   <div class="form-actions">
-                <button type="submit" class="btn btn-primary">Crear</button> 
+                {{-- <button type="submit" class="btn btn-primary">Crear</button> --}} 
+                {!! Form::submit('crear',['class'=>'btn btn-primary','required']) !!}
               </div> <!-- /form-actions --> 
                  
               <br><br><br>			

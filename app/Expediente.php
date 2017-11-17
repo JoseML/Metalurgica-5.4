@@ -18,7 +18,7 @@ class Expediente extends Model
 		return $this->hasMany('App\Buzon'); 
 	}    
 	
-	public function claps(){
+	public function workflow(){
  
  		return $this->belongsToMany('App\Workflow','buzon')
    		->using('App\Buzon')

@@ -14,7 +14,7 @@ class Workflow extends Model
 		return $this->belongsTo('App\Proceso'); 
 	}
 
-	public function claps(){
+	public function expedientes(){
  
  		return $this->belongsToMany('App\Expediente','buzon')
    		->using('App\Buzon')
